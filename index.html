@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train2Gain</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
+    <style>
+        /*Css reset*/
+        body {
+            margin: 0px;
+            padding: 0px;
+            background: url("gym-image.png") no-repeat center center/cover;
+            background-color: rgba(0, 0, 0, 1);
+            /*background-blend-mode:;
+             background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat; */
+            height: 100%;
+            width: 100%;
+            color: white;
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+
+        .left {
+            /*border: 2px solid red;*/
+            display: inline-block;
+            position: absolute;
+            left: 15px;
+            top: 13px;
+        }
+
+        .mid {
+            /*border: 2px solid green;*/
+            display: block;
+            width: 44%;
+            margin: 13px auto;
+            /*to make it centered*/
+            backdrop-filter: blur(10px);
+            background-color: rgba(0, 0, 0, 0.249);
+            font-weight: 700;
+
+        }
+
+        .right {
+            /*border: 2px solid yellow;*/
+            display: inline-block;
+            position: absolute;
+            right: 15px;
+            top: 13px;
+            width:auto;
+
+            /*taking position relative to the header(parent)*/
+
+        }
+
+        .navbar {
+            display: inline-block;
+            margin: 9px auto;
+            width: 93%;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 17px;
+            margin: 0px 10px;
+
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 10x 10px;
+    
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: rgb(230, 93, 20);
+        }
+
+
+        .left img {
+            width: 57px;
+            filter: invert(100%);
+
+        }
+
+        .left div {
+            text-align: center;
+            font-size: 25px;
+            line-height: 13px;
+            font-weight: 600;
+        }
+
+        .btn {
+            padding: 2px 7px;
+            margin: 3px 5px;
+            color: white;
+            background-color: black;
+            border: 2px solid rgb(71, 66, 66);
+            border-radius: 17px;
+            font-size: 15px;
+            cursor: pointer;
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .btn:hover {
+            color:black;
+            background-color: rgb(228, 89, 24);;
+            text-decoration: underline;
+        }
+
+        .container {
+            /*border: 2px solid limegreen;*/
+            padding: 10px;
+            margin: 2px;
+            width: 28%;
+            border-radius: 10px;
+            position: relative;
+            left: 774px;
+            top: 43px;
+            backdrop-filter:blur(5px);
+            background-color: rgb(123 66 51 / 26%);
+        }
+
+        .formgrp input {
+            display: block;
+            text-align: center;
+            width: 206px;
+            padding: 8px;
+            margin: 9px auto;
+            border: 2px solid black;
+            border-radius: 11px;
+            font-size: 10px;
+        }
+
+        .container h1 {
+            text-align: center;
+            font-size:20px;
+            line-height: 6px;
+
+        }
+
+        .container button {
+            display: block;
+            width: 33%;
+            margin: 12px auto;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!--left for logo-->
+        <div class="left">
+            <img src="dumbbell.png" alt="xyz">
+            <div>Train2Gain</div>
+
+
+        </div>
+
+        <!--mid for navbar-->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!--right for buttons-->
+        <div class="right">
+            <button class="btn">Call us now</button>
+            <button class="btn">Email us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of Delhi....</h1>
+        <h1>now!!</h1>
+        <form action="noaction.php">
+            <div class="formgrp">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="formgrp">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="formgrp">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="formgrp">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <div class="formgrp">
+                <input type="text" name="" placeholder="Enter your Phone number">
+            </div>
+            <div class="formgrp">
+                <input type="text" name="" placeholder="Enter your Email id">
+            </div>
+            <button class="btn">Submit</button>
+
+        </form>
+    </div>
+
+</body>
+
+</html>
